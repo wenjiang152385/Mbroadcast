@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.FlightInfoActivity">
+
+    <include layout="@layout/add_titlebar" />
+
+    <include
+        android:id="@+id/main1"
+        layout="@layout/activity_info_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <include
+        android:id="@+id/main2"
+        layout="@layout/activity_info_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+
+    <include
+        android:id="@+id/main3"
+        layout="@layout/activity_info_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+
+    <LinearLayout
+        android:id="@+id/main4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/button_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/line"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/record_dialog"
+            android:text="保存"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true"
+            android:background="#000000"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/delete_dialog"
+            android:text="取消"
+            android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

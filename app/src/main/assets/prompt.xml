@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prompts>
+    <aircompany>
+        <name>东方航空公司</name>
+        <prompt>尊敬的旅客们，现在人流量较大，请有序排队，谢谢合作。</prompt>
+        <prompt>暂时无法值机的旅客，请耐心等待，我们会及时为您办理值机手续，谢谢。</prompt>
+        <prompt>办理托运的旅客请注意：充电宝、打火机禁止放在行李箱内。</prompt>
+    </aircompany>
+</prompts>

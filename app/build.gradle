@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'me.tatarka.retrolambda'
+
+
+tasks.whenTaskAdded { task ->
+    if (task.name.contains('AndroidTest') || task.name.contains('Test')) {
+        task.enabled = false
+    }
+}
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "http://dl.bintray.com/lukaville/maven"
+        }
+        jcenter { url "http://jcenter.bintray.com/" }
+
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.1.0'
+    }
+}
+greendao {
+    schemaVersion 1
+    daoPackage 'com.oraro.mbroadcast.dao'
+    targetGenDir 'src/main/java'
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+    lintOptions {//设置编译的lint开关，程序在buid的时候，会执行lint检查，有任何的错误或者警告提示，都会终止构建
+        abortOnError false
+    }
+    defaultConfig {
+        applicationId "com.oraro.mbroadcast"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 10240
+        versionName "1.2.40"
+        multiDexEnabled true
+    }
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    buildTypes {
+        release {
+            // zipAlign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            // 混淆
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:multidex:1.0.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'org.greenrobot:greendao:3.1.0'
+    compile 'org.greenrobot:greendao-generator:3.1.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'org.apache.poi:poi:3.15-beta2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'org.apache.mina:mina-core:2.0.16'
+    compile 'org.slf4j:slf4j-android:1.7.21'
+    compile 'com.android.support:design:23.0.1'
+    compile 'io.reactivex:rxjava:1.1.8'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile project(':presenter')
+    compile "com.android.support:recyclerview-v7:23.1.1"
+    compile 'com.yqritc:recyclerview-flexibledivider:1.2.6'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+}

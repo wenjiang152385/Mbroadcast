@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="提示"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="23dp"
+        android:text="您所选中的航班，后续未播报部分已经批量延误x 小时x分钟，是否确认?"
+        android:layout_below="@+id/dialog_title"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/play_dialog1"
+        android:text="确认"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FFFFFF" />
+    <Button
+        android:id="@+id/cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/play_dialog1"
+        android:text="取消"
+        android:layout_marginRight="20dp"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

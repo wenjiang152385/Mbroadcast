@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+<include layout="@layout/add_titlebar"
+         android:id="@+id/include"></include>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_excel_listView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/activity_excel_button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_file_btn"
+        android:id="@+id/activity_excel_button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/tab_selected"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/common_white"
+        android:layout_marginTop="70dp"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="继续添加"
+        android:id="@+id/activity_excel_button2"
+        android:background="@mipmap/fligth_edit_add_bg"
+        android:textColor="@color/common_white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:textSize="@dimen/edit_right_textSize" />
+
+    <TextView
+        android:id="@+id/tv_edit_month"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/bg_edit_date"
+        android:gravity="center"
+        android:text="@string/month_8"
+        android:textColor="#666"
+        android:textSize="@dimen/edit_right_textSize" />
+
+    <ImageView
+        android:id="@+id/iv_edit_month"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_edit_xiala_enable"
+        android:clickable="true"
+        android:padding="5dp"
+        android:src="@drawable/iv_edit_arrow_time" />
+
+    <TextView
+        android:id="@+id/tv_edit_day"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@mipmap/bg_edit_date"
+        android:gravity="center"
+        android:text="@string/_22"
+        android:textSize="@dimen/edit_right_textSize" />
+
+    <ImageView
+        android:id="@+id/iv_edit_day"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_edit_xiala_enable"
+        android:clickable="true"
+        android:padding="5dp"
+        android:src="@drawable/iv_edit_arrow_time" />
+
+    <TextView
+        android:id="@+id/tv_edit_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@mipmap/bg_edit_date"
+        android:gravity="center"
+        android:text="@string/hour_09"
+        android:textSize="@dimen/edit_right_textSize" />
+
+    <ImageView
+        android:id="@+id/iv_edit_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_edit_xiala_enable"
+        android:clickable="true"
+        android:padding="5dp"
+        android:src="@drawable/iv_edit_arrow_time" />
+
+    <TextView
+        android:id="@+id/tv_edit_min"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@mipmap/bg_edit_date"
+        android:gravity="center"
+        android:text="@string/min_30"
+        android:textSize="@dimen/edit_right_textSize" />
+
+    <ImageView
+        android:id="@+id/iv_edit_min"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_edit_xiala_enable"
+        android:clickable="true"
+        android:padding="5dp"
+        android:src="@drawable/iv_edit_arrow_time" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_edit_unselect"
+        android:gravity="center"
+        android:text="@string/min_30"
+        android:textSize="@dimen/edit_right_textSize"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_edit_xiala"
+        android:clickable="true"
+        android:padding="5dp"
+        android:src="@drawable/iv_edit_arrow_time"
+        android:visibility="invisible" />
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="120dp"
+        android:id="@+id/relativeLayout"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/iv_check_bg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et"
+                android:text="航班号MU5140"
+                android:paddingLeft="10dp"
+                android:textSize="25sp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f9f2f2">
+            <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                   android:layout_below="@id/et">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/tv1"
+                       android:gravity="center"
+                       android:maxLines="1"
+                       android:text="播放时间: "
+                       android:textSize="20sp"
+                       android:paddingLeft="35dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/tv2"
+                       android:gravity="center"
+                       android:maxLines="1"
+                       android:text="6:00 "
+                       android:textSize="20sp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv3"
+                        android:gravity="center"
+                        android:paddingLeft="35dp"
+                        android:maxLines="1"
+                        android:text="起飞地: "
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv4"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="南京 "
+                        android:textSize="20sp"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/tv5"
+                           android:gravity="center"
+                           android:maxLines="1"
+                           android:text="目的地:  "
+                           android:textSize="20sp"
+                           android:paddingLeft="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv6"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="北京  "
+                        android:textSize="20sp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv7"
+                        android:gravity="center"
+                        android:paddingLeft="35dp"
+                        android:maxLines="1"
+                        android:text="类型:  "
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv8"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="值机  "
+                        android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+

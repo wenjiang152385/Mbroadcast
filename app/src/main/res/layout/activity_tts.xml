@@ -1,0 +1,114 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Write something"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生成文件"
+            android:id="@+id/radioButton1"
+            android:checked="false" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_span="2"
+            android:text="----------------------------------------------------------------------------------------------"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="参数设置：(以下不是必须设置)"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="选择发音人"/>
+    </TableRow>
+    <TableRow>
+        <RadioGroup
+            android:id="@+id/radiogroup1"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小研"
+                android:id="@+id/vixy"
+                android:checked="false" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小宇"
+                android:id="@+id/xiaoyu"
+                android:checked="false" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小新"
+                android:id="@+id/xiaoxin"
+                android:checked="false" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="楠楠"
+                android:id="@+id/nannan"
+                android:checked="false" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="语调(请输入0~100的数字,默认为50)"/>
+        <EditText
+            android:id="@+id/pitch"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="语速(请输入0~100的数字,默认为50)"/>
+        <EditText
+            android:id="@+id/speed"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="音量(请输入0~100的数字,默认为80)"/>
+        <EditText
+            android:id="@+id/volume"/>
+    </TableRow>
+
+    <TableRow
+        >
+        <Button
+            android:id="@+id/play"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="播放"
+            android:layout_width="wrap_content" />
+
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停"/>
+        <Button
+            android:id="@+id/continueplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="继续"/>
+    </TableRow>
+
+</TableLayout>

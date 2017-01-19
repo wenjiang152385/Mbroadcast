@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oraro.mbroadcast.ui.activity.AddAndEditActivity"
+    android:background="#ffffff">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/button_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"/>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/button_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/line"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/record_dialog"
+            android:text="保存"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true"
+            android:background="#000000"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/line"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/delete_dialog"
+            android:text="取消"
+            android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

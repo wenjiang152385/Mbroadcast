@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/timerbar"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+           android:orientation="vertical"
+        >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center_horizontal"
+             >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择延误时间"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!--<ImageView-->
+             <!--android:layout_width="wrap_content"-->
+             <!--android:id="@+id/imageView1"-->
+             <!--android:layout_height="wrap_content"-->
+             <!--android:background="@drawable/iv_check_bg"-->
+             <!--/>-->
+         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ll"
+            android:gravity="center_horizontal"
+            >
+
+
+        <!--<TimePicker-->
+        <!--android:id="@+id/timePic1"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_width="match_parent"/>-->
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/hour_wheelview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"/>
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/minute_wheelview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+         <!--<LinearLayout-->
+             <!--android:layout_width="match_parent"-->
+             <!--android:layout_height="match_parent"-->
+             <!--android:gravity="center_horizontal"-->
+             <!-->-->
+        <!--<TextView-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:id="@+id/buttone1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="25dp"-->
+        <!--android:layout_below="@id/ll"-->
+        <!--android:text="暂不确定延误时间"/>-->
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:id="@+id/imageView2"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@mipmap/checkbox1"-->
+            <!--/>-->
+         <!--</LinearLayout>-->
+    </LinearLayout>
+          <Button
+              android:id="@+id/bt1"
+              android:background="@drawable/bt_yanwu"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:text="确定"
+              android:layout_marginBottom="10dp"
+              android:textSize="30sp"
+              android:layout_centerHorizontal="true"
+              />
+      </RelativeLayout>
+</RelativeLayout>

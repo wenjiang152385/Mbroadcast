@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maps>
+    <map>
+        <key>呼市</key>
+        <value>呼和浩特</value>
+    </map>
+
+    <map>
+        <key>乌鲁</key>
+        <value>乌鲁木齐</value>
+    </map>
+
+    <map>
+        <key>连云</key>
+        <value>连云港</value>
+    </map>
+
+    <map>
+        <key>石家</key>
+        <value>石家庄</value>
+    </map>
+
+    <map>
+        <key>羽田</key>
+        <value>东京羽田机场</value>
+    </map>
+
+    <map>
+        <key>台北松山</key>
+        <value>台北市松山机场</value>
+    </map>
+
+    <map>
+        <key>金浦</key>
+        <value>首尔金浦机场</value>
+    </map>
+
+    <map>
+        <key>南苑</key>
+        <value>北京南苑机场</value>
+    </map>
+
+
+
+
+
+</maps>

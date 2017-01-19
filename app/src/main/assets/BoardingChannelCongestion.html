@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登机通道拥堵广播</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="application/javascript" src="my.js"></script>
+    <script type="application/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+<div id="usual">
+    <p>女士们，先生们，请注意:</p>
+    <div class="content">
+        &nbsp;&nbsp;&nbsp;&nbsp;<span id="message1">我们抱歉地通知各位, 由于登机通道拥堵，<span id="airlines"></span>&nbsp;<span id="flightno"></span>航班</span>(代码共享航班<input type="text" id="sharingflight">)<span id="message2">&nbsp;从&nbsp;<span id="provenance"></span>&nbsp;前往&nbsp;<span id="destination"></span>&nbsp;的航班将暂停登机，请各位旅客耐心等待，对以上所造成的任何不便，我们在此向您致歉。感谢您的合作与谅解。</span>
+    </div>
+</div>
+<div id="emergency">
+    <p>女士们，先生们，请注意:</p>
+    <div class="content">
+        &nbsp;&nbsp;&nbsp;&nbsp;<span>我们抱歉地通知各位, 由于登机通道拥堵，<span></span>&nbsp;<span></span>航班</span>(代码共享航班<input type="text" disabled="disabled" class="inputClass">)<span>&nbsp;从&nbsp;<span></span>&nbsp;前往&nbsp;<span></span>&nbsp;的航班将暂停登机，请各位旅客耐心等待，对以上所造成的任何不便，我们在此向您致歉。感谢您的合作与谅解。</span>
+    </div>
+</div>
+</body>
+</html>

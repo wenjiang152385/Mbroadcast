@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="15dp">
+
+    <com.oraro.mbroadcast.ui.widget.AlwaysMarqueeScrollView
+        android:id="@+id/prompt_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="#535353"
+        android:textSize="25px" />
+
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:text=""
+        android:minWidth="500dp"
+        android:textColor="#535353"
+        android:textSize="25px"
+        android:visibility="gone"
+        />
+
+
+
+    <CheckBox
+        android:id="@+id/radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:button="@drawable/checkbox_style" />
+
+    <ImageButton
+        android:id="@+id/check_ok"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:background="@mipmap/btn_ok"/>
+
+    <ImageButton
+        android:id="@+id/check_no"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="36dp"
+        android:visibility="gone"
+        android:background="@mipmap/btn_no"/>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>呼叫旅客</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="application/javascript" src="my.js"></script>
+    <script type="application/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+<div id="usual">
+    <p>女士们，先生们：</p>
+    <div class="content">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="message">乘坐&nbsp;<span id="flightno"></span>&nbsp;航班前往&nbsp;<span id="destination"></span>&nbsp;的旅客&nbsp;</span><input type="text" id="name"><input type="radio" name="identity" value="先生">先生<input type="radio" name="identity" value="女士">女士<input type="radio" name="identity" value="小姐">小姐 请注意。请您听到广播后，前往<input type="text" id="counter">号办票柜台，谢谢。
+    </div>
+</div>
+<div id="emergency">
+    <p>女士们，先生们：</p>
+    <div class="content">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>乘坐&nbsp;<span></span>&nbsp;航班前往&nbsp;<span></span>&nbsp;的旅客&nbsp;</span><input type="text" disabled="disabled" class="inputClass"><input type="radio" name="identity" value="先生">先生<input type="radio" name="identity" value="女士">女士<input type="radio" name="identity" value="小姐">小姐 请注意。请您听到广播后，前往<input type="text" disabled="disabled" class="inputClass">号办票柜台，谢谢。
+    </div>
+</div>
+</body>
+</html>

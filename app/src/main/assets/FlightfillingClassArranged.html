@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>航班延误/补班安排休息广播</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="application/javascript" src="my.js"></script>
+    <script type="application/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+<div id="usual">
+    <p>女士们，先生们：</p>
+    <div class="content">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="message">乘坐<span id="airlines"></span>&nbsp;<span id="flightno"></span>&nbsp;航班前往&nbsp;<span id="destination"></span>&nbsp;</span>(经停&nbsp;<input type="text" id="stopping"></span>)&nbsp;的旅客请注意: 本航班由于&nbsp;<input type="text" id="delay">原因<input type="radio" name="delay/cancel" value="延误" checked="checked">延误<input type="radio" name="delay/cancel" value="取消">取消. 在此向各位表示歉意，请旅客们带好随身物品，到登机口与工作人员联系，我们将安排各位前往宾馆休息，谢谢合作！
+    </div>
+</div>
+<div id="emergency">
+    <p>女士们，先生们：</p>
+    <div class="content">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>乘坐<span></span>&nbsp;<span></span>&nbsp;航班前往&nbsp;<span></span>&nbsp;</span>(经停&nbsp;<input type="text" disabled="disabled" class="inputClass"></span>)&nbsp;的旅客请注意: 本航班由于&nbsp;<input type="text" disabled="disabled" class="inputClass">原因<input type="radio" name="delay/cancel" value="延误" checked="checked">延误<input type="radio" name="delay/cancel" value="取消">取消. 在此向各位表示歉意，请旅客们带好随身物品，到登机口与工作人员联系，我们将安排各位前往宾馆休息，谢谢合作！
+    </div>
+</div>
+</body>
+</html>

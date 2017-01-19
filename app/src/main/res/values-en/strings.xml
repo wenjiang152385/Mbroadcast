@@ -1,0 +1,208 @@
+<resources>
+    <string name="app_name">东航移动广播</string>
+    <string name="base_fragment">基础Activity</string>
+    <string name="fragment_monday">星期一</string>
+    <string name="fragment_tuesday">星期二</string>
+    <string name="fragment_wednesday">星期三</string>
+    <string name="fragment_thursday">星期四</string>
+    <string name="fragment_friday">星期五</string>
+    <string name="fragment_saturday">星期六</string>
+    <string name="fragment_sunday">星期日</string>
+    <string name="fragment_temp">临时播放</string>
+    <string name="radiogroup1">广播</string>
+    <string name="radiogroup2">航班</string>
+    <string name="radiogroup3">温馨提示</string>
+    <string name="title_bar_aviation_information">航空信息</string>
+    <string name="popuplist_edit">编辑</string>
+    <string name="popuplist_delete">删除</string>
+    <string name="flight_edit">手工录入</string>
+    <string name="listview_text_title_play_time">播放时间</string>
+    <string name="listview_text_title_flight_number">航班号</string>
+    <string name="listview_text_title_take_off">出发站</string>
+    <string name="listview_text_title_destination">到站</string>
+    <string name="listview_text_title_type">备注</string>
+    <string name="listview_text_title_flight_status">机号</string>
+    <string name="listview_text_title_flight_type">机型</string>
+    <string name="listview_text_title_originating_information">始发信息</string>
+    <string name="listview_text_title_arrival_information">抵达信息</string>
+    <string name="listview_text_title_delay_information">延误信息</string>
+    <string name="listview_text_title_time">时间</string>
+    <string name="listview_text_title_boarding_gate_information">登机口信息</string>
+    <string name="choose_file_btn">请选择文件</string>
+    <string name="listview_text_title_delay_information_string">未延误</string>
+    <string name="listview_text_title_operating_area">操作区</string>
+    <!--编辑页面相关String-->
+    <string name="tts">TTS</string>
+    <string name="audio">录音</string>
+    <string name="flightNum">航班号</string>
+    <string name="start">起始站</string>
+    <string name="zhiji">开始值机模板</string>
+    <string name="startPlace">始发站</string>
+    <string name="Wu">无</string>
+    <string name="destination">目的站</string>
+    <string name="XiaMen">厦门</string>
+    <string name="count">播放次数</string>
+    <string name="time_3">3次</string>
+    <string name="day_21">21日</string>
+    <string name="hour_09">09时</string>
+    <string name="min_30">30分</string>
+    <string-array name="monthArray1">
+        <item>1月</item>
+        <item>3月</item>
+        <item>5月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>10月</item>
+        <item>12月</item>
+    </string-array>
+    <string-array name="monthArray2">
+        <item>2月</item>
+        <item>4月</item>
+        <item>6月</item>
+        <item>9月</item>
+        <item>11月</item>
+    </string-array>
+    <string-array name="monthArray3">
+        <item>4月</item>
+        <item>6月</item>
+        <item>9月</item>
+        <item>11月</item>
+    </string-array>
+    <string name="time">播放时间</string>
+    <string name="month_2">2月</string>
+    <string name="month_8">8月</string>
+    <string name="_22">21日</string>
+    <string name="insert">插入</string>
+    <string name="tv_edit_back">返回</string>
+    <string name="btn_edit_cancel">取消</string>
+    <string name="tv_edit_titleName">编辑</string>
+    <string name="tv_edit_mould_info">前往 厦门 的旅客请注意：\n\t\t\t您乘坐的 中国东方航空公司 MU310 次航班将在 08:00 截止办理登记手续。乘坐本次航班没有办理手续的旅客，请马上到柜台办理。谢谢！</string>
+    <string name="tv_mouldTitle_tts">值机模板</string>
+    <string name="tv_mouldTitle_audio">录音模板</string>
+    <string name="edit_activity_month">月</string>
+    <string name="edit_activity_day">日</string>
+    <string name="edit_activity_hour">时</string>
+    <string name="edit_activity_min">分</string>
+    <string name="edit_activity_second">秒</string>
+    <string name="edit_activity_count">次</string>
+    <string name="edit_activity_edit">编辑</string>
+    <string name="edit_activity_increase">新增</string>
+    <string name="edit_activity_save">保存</string>
+    <string name="edit_activity_not_insert">无法执行“插入”，请先导入数据</string>
+    <string name="edit_activity_notnull">不能为空</string>
+    <string name="edit_activity_increase_success">新增广播成功！</string>
+    <string name="edit_activity_edit_success">编辑成功！</string>
+    <string name="audio_fragment_self_define">自定义录音</string>
+    <string name="input_edit_content">请在此输入所需内容</string>
+    <string name="input_edit_flightNum">请输入航班号</string>
+    <string name="input_edit_stop">请输入目的站</string>
+    <string name="input_edit_start">请输入始发站</string>
+    <string name="edit_mould_content">模板内容</string>
+    <string name="edit_mould_isnull">不能为空</string>
+    <string name="self_definition_audio_mould">自定义录音模板</string>
+    <string name="self_definition_audio">自定义录音</string>
+    <string name="errorOperatePrompt">请先导入基本数据，然后再执行该操作</string>
+    <string name="edit_custom_tts">自定义TTS</string>
+    <string name="edit_custom_tts_mould">自定义模板</string>
+    <string name="edit_incomplete_info">信息填写不全</string>
+    <string name="edit_no_more_data">没有更多数据</string>
+    <string name="FileSelectFragment_path_wrong">您选择的文件格式不正确，请选择音频文件</string>
+    <string name="FileSelectFragment_path_null">请先点击话筒图标选择音频文件，再执行该操作，谢谢！</string>
+
+    <!--dialog页面（文件选择器）-->
+    <string name="FileSelectFragment_confirm_used">确认</string>
+    <string name="FileSelectFragment_used">已使用</string>
+    <string name="FileSelectFragment_unused">未使用</string>
+    <string name="FileSelectFragment_search">请点击“查找”按钮，选择音频文件</string>
+    <string name="FileSelectFragment_path_isnull">文件路径不存在，请重新查找</string>
+    <string name="FileSelectFragment_xml_search">查找</string>
+    <string name="FileSelectFragment_xml_cancel_use">取消</string>
+    <string name="dialog_title_file">文件</string>
+    <string name="dialog_tts_play">点击播放</string>
+    <!-- 航班详情界面-->
+    <string name="info_title_left">返回</string>
+    <string name="info_title_center">详情</string>
+    <string name="info_title_right">完成</string>
+    <string name="version_activity_title_name">版本信息</string>
+    <!--紧急播放编辑页面-->
+    <string-array name="mouldArray1">
+        <item>寻找未登机乘客广播</item>
+        <item>寻找旅客广播</item>
+        <item>航班延误广播</item>
+        <item>批量航班延误广播</item>
+        <item>登机通道拥堵广播</item>
+        <item>登机口更改广播</item>
+        <item>过站航班登机广播</item>
+        <item>航班延误/补班安排休息广播</item>
+        <item>航班取消/补班安排餐饮广播</item>
+    </string-array>
+    <string-array name="mouldArray2">
+        <item>柜台关闭</item>
+        <item>呼叫旅客</item>
+        <item>呼叫行李开检旅客</item>
+        <item>呼叫候补旅客</item>
+        <item>天气原因航班延误</item>
+        <item>机故原因</item>
+        <item>电脑系统故障</item>
+        <item>航班取消</item>
+        <item>严禁替他人托运行李</item>
+        <item>失物招领</item>
+    </string-array>
+    <string-array name="mouldArray3">
+        <item>东航乘客/最后广播</item>
+        <item>东航乘客/登机口更改</item>
+        <item>东航乘客/延误广播</item>
+        <item>东航乘客/寻找旅客</item>
+        <item>东航乘客/失物招领广播</item>
+        <item>非东航乘客/登机口更改</item>
+        <item>非东航乘客/延误广播</item>
+        <item>非东航乘客/寻找旅客</item>
+    </string-array>
+    <string-array name="mouldArray4">
+        <item>行李传送转盘变更广播</item>
+    </string-array>
+    <string-array name="ttsMouldTitleArray">
+        <item>登机口广播词</item>
+        <item>东航值机柜台广播</item>
+        <item>休息室广播</item>
+        <item>到达广播</item>
+        <item></item>
+    </string-array>
+    <string name="list1_LookingForBoardingPassengers">寻找未登机乘客广播</string>
+    <string name="title_activity_prompt">PromptActivity</string>
+    <string name="urgent_broadcast_activity_title">紧急播放编辑</string>
+    <string name="edit_outside_brackets_info">请填写模板中，除"( " ")"以外的所有信息</string>
+    <string name="urgent_broadcast_flightNum_cannot_null">航班号不能为空</string>
+    <string name="urgent_broadcast_select_delay_flightNum">请选择延误的航班号</string>
+    <string name="urgent_broadcast_insert_success">紧急播放广播插入成功</string>
+    <string name="urgent_broadcast_lookFor_unboarding_passenger">寻找未登机乘客广播</string>
+    <string name="urgent_broadcast_flightNum_repeat">您所选的航班号重复，请重新选择</string>
+    <string name="activity_settings_name">播报设置</string>
+    <string name="activity_settings_text">航班播报循环次数</string>
+    <string name="activity_settings_day_select">天数选择</string>
+    <string name="activity_settings_ok">完成</string>
+    <string name="activity_settings_day_select_range">输入范围：1—10</string>
+    <string name="insert_broadcast">立即播报</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--自定义广播Fragment-->
+    <string-array name="typeTitle">
+        <item>温馨提示</item>
+        <item>快速紧急广播</item>
+    </string-array>
+    <string name="custom_broadcast">自定义广播</string>
+    <string name="please_select_item">请选择需要播放的条目</string>
+    <string name="start_play">开始播放</string>
+
+    <string name="updating_delay_info">正在更新延误信息,请稍等!</string>
+
+
+    <string name="loading">加载中...</string>
+    <string name="load_failed">加载失败</string>
+    <string name="invalid_network">无效的网络</string>
+    <string name="load_no_more">没有更多了</string>
+    <string name="refreshing">刷新中</string>
+
+</resources>

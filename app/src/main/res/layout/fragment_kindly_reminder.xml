@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.oraro.mbroadcast.ui.fragment.KindlyReminderFragment">
+
+    <!--总title部分-->
+    <include layout="@layout/titlebar" />
+    <!--内容部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!--左边部分-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#D8D8D8"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_reminder_left"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_reminder_add"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@mipmap/reminder_add"
+                android:clickable="true" />
+            <!--&lt;!&ndash;左边上半部分&ndash;&gt;
+            <ExpandableListView
+                android:id="@+id/expand_kindly_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:background="#D8D8D8" />
+            &lt;!&ndash;左边中间部分&ndash;&gt;
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:background="#fff"
+                 android:orientation="vertical">
+                 <TextView
+                     android:padding="10dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:text="+"
+                     android:textColor="#000"
+                     android:textSize="25dp" />
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="8dp"
+                     android:background="#D8D8D8" />
+             </LinearLayout>
+            &lt;!&ndash;<ImageView&ndash;&gt;
+                &lt;!&ndash;android:id="@+id/left_middle_add"&ndash;&gt;
+                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;
+                &lt;!&ndash;android:layout_weight="1"&ndash;&gt;
+                &lt;!&ndash;android:clickable="true"&ndash;&gt;
+                &lt;!&ndash;android:background="@drawable/edit_audio1">&ndash;&gt;
+            &lt;!&ndash;</ImageView>&ndash;&gt;
+            &lt;!&ndash;左边下半部分&ndash;&gt;
+            <include
+                android:id="@+id/flight_info_kindly_reminder"
+                layout="@layout/activity_broadcast_flight_info" />-->
+
+        </LinearLayout>
+
+        <!--右边部分-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lv_reminder_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:transcriptMode="normal" />
+
+                <!--次数-->
+                <include layout="@layout/activity_broadcast_count1" />
+                <include layout="@layout/activity_broadcast_count2"
+                    />
+
+                <!--时间-->
+                <include layout="@layout/fragment_date1"
+                    />
+                <include layout="@layout/fragment_date2"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_reminder_instant_broadcast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="180dp"
+                android:background="@drawable/bg_edit_btn_insert"
+                android:text="@string/insert_broadcast"
+                android:textColor="#fff"
+                android:textSize="@dimen/edit_right_textSize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

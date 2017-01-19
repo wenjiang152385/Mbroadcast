@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_custom_broadcast"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.oraro.mbroadcast.ui.activity.CustomBroadcastActivity">
+    <!--总title部分-->
+    <include layout="@layout/titlebar" />
+    <!--内容部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!--左边部分-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/flightNum"
+                    android:textSize="@dimen/edit_left_title_textSize" />
+
+                <FrameLayout
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#D9D9D9" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/startPlace"
+                    android:textSize="@dimen/edit_left_title_textSize" />
+            </LinearLayout>
+
+
+                <!--universal listview-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list_view"
+                    android:scrollbars="vertical"
+                    android:clipToPadding="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"/>
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#D9D9D9" />
+        <!--右边部分-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--模板标题-->
+                <TextView
+                    android:id="@+id/tv_edit_mould_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/tv_edit_mould_title_padding"
+                    android:text="@string/zhiji"
+                    android:textColor="#0090e2"
+                    android:textSize="@dimen/tv_edit_mould_title_textSize" />
+
+                <View
+                    android:layout_width="800dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#D9D9D9" />
+
+                <!--模板具体内容-->
+                <LinearLayout
+                    android:layout_width="@dimen/ll_edit_content_width"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/linear_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"/>
+
+                    <!--<WebView-->
+                        <!--android:id="@+id/edit_webView"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:visibility="gone"/>-->
+                </LinearLayout>
+                <!--航班基本信息：航班号、始发站、目的站-->
+                <include layout="@layout/activity_broadcast_flight_row" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="100dp"
+                android:layout_marginRight="180dp"
+                android:background="@drawable/bg_edit_btn_insert"
+                android:text="保存"
+                android:textColor="#fff"
+                android:textSize="@dimen/edit_right_textSize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

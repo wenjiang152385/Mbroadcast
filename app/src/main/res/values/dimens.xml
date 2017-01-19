@@ -1,0 +1,49 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- For buttons -->
+    <dimen name="common_text_size_large">18dp</dimen>
+    <!-- For list texts (top line) -->
+    <dimen name="common_text_size_middle">16dp</dimen>
+    <dimen name="common_text_size_middle_2">16dp</dimen>
+    <!-- For list texts (bottom line), summary texts, icon texts, descriptions, tag texts -->
+    <dimen name="common_text_size_small">13dp</dimen>
+    <dimen name="common_text_size_small_2">10dp</dimen>
+    <dimen name="common_text_size_small_3">12dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="listview_title_textview_size">160dp</dimen>
+    <!--编辑页面相关dimens-->
+    <dimen name="activity_edit_horizontal_margin">16dp</dimen>
+    <dimen name="activity_edit_vertical_margin">16dp</dimen>
+    <dimen name="rl_edit_title_height">50dp</dimen>
+    <dimen name="iv_edit_backimage_marginLeft">41dp</dimen>
+    <dimen name="tv_edit_back_marginLeft">5dp</dimen>
+    <dimen name="tv_edit_title_textSize">22sp</dimen>
+    <dimen name="tv_edit_audio_padding">5dp</dimen>
+    <dimen name="iv_edit_line_width">130dp</dimen>
+    <dimen name="tv_edit_mould_title_padding">30dp</dimen>
+    <dimen name="tv_edit_mould_title_textSize">24dp</dimen>
+    <dimen name="ll_edit_mould_info_marginTop">0dp</dimen>
+    <dimen name="tv_edit_moudle_info_padding">0dp</dimen>
+    <dimen name="tv_edit_moudle_info_textSize">20sp</dimen>
+    <dimen name="ll_edit_showInfo_marginTop">1dp</dimen>
+    <dimen name="ll_edit_count_paddingBottom">40dp</dimen>
+    <dimen name="ll_edit_count_paddingTop">40dp</dimen>
+    <dimen name="tv_edit_tts_padding">5dp</dimen>
+    <dimen name="ll_edit_content_width">714.7dp</dimen>
+    <dimen name="ll_edit_content_height">220dp</dimen>
+    <dimen name="tv_mouldTitle_tts_padding">15dp</dimen>
+    <dimen name="tv_mouldIitle_tts_textSize">18dp</dimen>
+    <dimen name="tv_mouldTitle_audio_textSize">18dp</dimen>
+    <dimen name="tv_mouldTitle_audio_padding">15dp</dimen>
+    <dimen name="tv_width">4dp</dimen>
+    <dimen name="edit_right_textSize">18dp</dimen>
+    <dimen name="edit_item_textSize">15sp</dimen>
+    <dimen name="edit_left_title_textSize">20dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">1000dp</dimen>
+    <dimen name="shadow_width">5dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+</resources>

@@ -1,0 +1,93 @@
+<maps>
+
+    <map>
+        <key>播报时间</key>
+        <value>time</value>
+        <required>1</required>
+        <no_required_default>0</no_required_default>
+    </map>
+
+    <map>
+        <key>航班号</key>
+        <value>flightNumber</value>
+        <required>1</required>
+        <no_required_default>0</no_required_default>
+    </map>
+
+    <map>
+        <key>机型</key>
+        <value>planeType</value>
+        <required>1</required>
+        <no_required_default>0</no_required_default>
+    </map>
+
+    <map>
+        <key>到站</key>
+        <value>arrivalStation</value>
+        <required>1</required>
+        <no_required_default>0</no_required_default>
+    </map>
+
+    <map>
+        <key>备注</key>
+        <value>remarks</value>
+        <required>0</required>
+        <no_required_default>1</no_required_default>
+    </map>
+
+    <map>
+        <key>延误信息</key>
+        <value>isDelay</value>
+        <required>0</required>
+        <no_required_default>1</no_required_default>
+    </map>
+
+    <map>
+        <key>出发站</key>
+        <value>departure</value>
+        <required>0</required>
+        <no_required_default>0</no_required_default>
+    </map>
+
+    <map>
+        <key>机号</key>
+        <value>planeNumber</value>
+        <required>0</required>
+        <no_required_default>0</no_required_default>
+    </map>
+
+    <map>
+        <key>代理</key>
+        <value>proxy</value>
+        <required>0</required>
+        <no_required_default>0</no_required_default>
+    </map>
+
+    <map>
+        <key>预计起飞</key>
+        <value>planToTakeOffDate</value>
+        <required>0</required>
+        <no_required_default>0</no_required_default>
+    </map>
+
+    <map>
+        <key>机位</key>
+        <value>planePosition</value>
+        <required>0</required>
+        <no_required_default>0</no_required_default>
+    </map>
+
+    <map>
+        <key>楼号</key>
+        <value>buildingNumber</value>
+        <required>0</required>
+        <no_required_default>0</no_required_default>
+    </map>
+
+    <map>
+        <key>门号</key>
+        <value>doorNumber</value>
+        <required>0</required>
+        <no_required_default>0</no_required_default>
+    </map>
+</maps>

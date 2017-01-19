@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.oraro.mbroadcast.ui.activity.SearchFlightActivity"
+    android:background="#ffffff">
+
+    <include layout="@layout/titlebar"></include>
+
+    <com.oraro.mbroadcast.ui.widget.NewSearchBar
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="300dp"
+        android:visibility="gone"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/listview_title_bg"
+        android:gravity="center_vertical"
+        android:minHeight="60dp">
+
+        <TextView
+            android:id="@+id/text_title_play_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/listview_text_title_flight_number"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/text_title_flight_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="修改时间"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/text_title_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/listview_text_title_originating_information"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/text_title_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/listview_text_title_arrival_information"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/text_title_delay_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="航班日期"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/text_title_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="起飞时间"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/text_title_boarding_gate_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="机号"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+
+    <com.oraro.mbroadcast.ui.widget.RefreshLayout
+        android:id="@+id/flight_view"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/flight_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </com.oraro.mbroadcast.ui.widget.RefreshLayout>
+
+
+
+</LinearLayout>

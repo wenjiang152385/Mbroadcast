@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>批量延误广播</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="application/javascript" src="my.js"></script>
+    <script type="application/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+<div id="usual">
+    <p>女士们，先生们，请注意:</p>
+    <div class="content">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乘坐<span id="message1"><span id="flightno"></span></span>&nbsp;航班</span>(代码共享航班<input type="text" id="sharingflight">)<span id="text"></span><span id="message2">的乘客请注意：我们抱歉地通知您由于&nbsp;</span>
+        <input type="radio" name="delayreason" value="飞机晚到">飞机晚到
+        <input type="radio" name="delayreason" value="航班调配">航班调配
+        <input type="radio" name="delayreason" value="客舱清洁">客舱清洁
+        <input type="radio" name="delayreason" value="机械检修">机械检修
+        <input type="radio" name="delayreason" value="天气">天气
+        <input type="radio" name="delayreason" value="流量控制">流量控制
+        的原因，本次航班将延迟登机，请在大厅内耐心等候，登机时间我们将稍后广播通知。如您需要任何协助，请与登机口工作人员联系，感谢您的合作与谅解。
+    </div>
+</div>
+
+<div id="emergency">
+    <p>女士们，先生们，请注意:</p>
+    <div class="content">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乘坐<span><span></span></span>&nbsp;航班</span>(代码共享航班<input type="text" disabled="disabled" class="inputClass">)<span ></span><span>的乘客请注意：我们抱歉地通知您由于&nbsp;</span>
+        <input type="radio" name="delayreason" value="飞机晚到">飞机晚到
+        <input type="radio" name="delayreason" value="航班调配">航班调配
+        <input type="radio" name="delayreason" value="客舱清洁">客舱清洁
+        <input type="radio" name="delayreason" value="机械检修">机械检修
+        <input type="radio" name="delayreason" value="天气">天气
+        <input type="radio" name="delayreason" value="流量控制">流量控制
+        的原因，本次航班将延迟登机，请在大厅内耐心等候，登机时间我们将稍后广播通知。如您需要任何协助，请与登机口工作人员联系，感谢您的合作与谅解。
+    </div>
+</div>
+</body>
+</html>

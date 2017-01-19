@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maps>
+    <map>
+        <key>航班号</key>
+        <value>flightNumber</value>
+    </map>
+
+    <map>
+        <key>机型</key>
+        <value>planeType</value>
+    </map>
+
+    <map>
+        <key>到站</key>
+        <value>arrivalStation</value>
+    </map>
+
+    <map>
+        <key>运行延误</key>
+        <value>delayInfo</value>
+    </map>
+
+    <map>
+        <key>备注</key>
+        <value>remarks</value>
+    </map>
+
+    <map>
+        <key>出发站</key>
+        <value>departure</value>
+    </map>
+
+    <map>
+        <key>机号</key>
+        <value>planeNumber</value>
+    </map>
+
+    <map>
+        <key>代理</key>
+        <value>proxy</value>
+    </map>
+
+    <map>
+        <key>计飞</key>
+        <value>planToTakeOffDate</value>
+    </map>
+
+    <map>
+        <key>机位</key>
+        <value>planePosition</value>
+    </map>
+
+    <map>
+        <key>楼号</key>
+        <value>buildingNumber</value>
+    </map>
+
+    <map>
+        <key>门号</key>
+        <value>doorNumber</value>
+    </map>
+
+
+
+</maps>

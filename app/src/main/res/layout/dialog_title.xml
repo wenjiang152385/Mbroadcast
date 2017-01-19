@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <!--<RelativeLayout
+        android:id="@+id/btn_tts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txt_tts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center|right"
+            android:textColor="#f5a726"
+            android:text="TTS"
+            android:textSize="23dp" />
+
+        <ImageView
+            android:id="@+id/tts_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_tts"
+            android:src="@mipmap/clicked_dialog" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_filePath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_filePath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textColor="#343434"
+                android:text="文件"
+                android:textSize="23dp" />
+
+            <ImageView
+                android:id="@+id/filePath_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_filePath"
+                android:layout_alignLeft="@+id/txt_filePath"
+                android:src="@mipmap/unclicked_dialog" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btn_cancel"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="38dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/cancel_dialog" />
+
+    </RelativeLayout>-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_tts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tts"
+                android:textColor="#f5a726"
+                android:textSize="23dp" />
+
+            <ImageView
+                android:id="@+id/tts_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_tts"
+                android:src="@mipmap/clicked_dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_filePath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/dialog_title_file"
+                android:textColor="#343434"
+                android:textSize="23dp" />
+
+            <ImageView
+                android:id="@+id/filePath_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_filePath"
+                android:layout_below="@+id/txt_filePath"
+                android:src="@mipmap/unclicked_dialog" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

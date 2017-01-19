@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" >
+    <include layout="@layout/titlebar"></include>
+    <com.oraro.mbroadcast.ui.fragment.TitleIndicator
+        android:id="@+id/pagerindicator"
+        android:layout_width="fill_parent"
+        android:layout_height="34dp"
+        android:background="@color/common_white"
+        app:footerLineHeight="1dp"
+        app:footerTriangleHeight="1.0dp"
+        app:textColor="@drawable/tab_indicator_text"
+        app:textSizeNormal="@dimen/common_text_size_middle_2"
+        app:textSizeSelected="@dimen/common_text_size_middle_2" />
+
+    <!-- Don't set background for ViewPager. It doesn't work because of page margin -->
+
+    <com.oraro.mbroadcast.ui.fragment.ViewPagerCompat
+        android:id="@+id/pager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:duplicateParentState="true" />
+
+</LinearLayout>

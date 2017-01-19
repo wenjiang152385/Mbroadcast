@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <drawable name="transparent">#00000000</drawable>
+    <color name="common_white">#ffffff</color>
+    <color name="sercher_gray">#a3a3a3</color>
+    <color name="common_white_shadow">#414141</color>
+    <color name="common_white_disabled">#e7e7e7</color>
+    <!-- For main texts -->
+    <color name="common_dark">#3d5562</color>
+    <color name="common_dark_shadow">#dedede</color>
+    <color name="common_dark_edit">#FFEAEBEC</color>
+    <color name="common_dark_disabled">#9aa7af</color>
+    <!-- For secondary texts -->
+    <color name="common_grey">#8496a0</color>
+    <color name="common_grey_disabled">#aabbc4</color>
+    <!-- For danger cases, such as virus, file delete... -->
+    <color name="common_red">#e62f2f</color>
+    <!-- For warning cases, such as trashes... -->
+    <color name="common_yellow">#f5a623</color>
+    <!-- For safe cases -->
+    <color name="common_title">#0090e2</color>
+    <!-- For suggestions -->
+    <color name="common_blue">#4b8bbd</color>
+    <color name="tab_indicator_text_selected">#ffffff</color>
+    <color name="tab_indicator_text_unselected">#0090e2</color>
+    <color name="page_viewer_margin_color">#007800</color>
+    <color name="radioGroup_bg">#c1c1c1</color>
+    <color name="week_list_item_bg">#ffefd4</color>
+    <color name="tab_selected">#0090e2</color>
+    <color name="tab_noselected">#424242</color>
+    <color name="listview_title_bg">#cccccc</color>
+    <color name="listview_title_text">#000000</color>
+    <color name="listview_item_text">#000000</color>
+    <color name="gray_white">#ffffff</color>
+    <color name="play_after">#FFD1D1D1</color>
+    <color name="list_item_view_color">#ff0303</color>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false" />
+
+    <Button
+        android:id="@+id/mediarecorder1_AudioStartBtn"
+        android:layout_width="170px"
+        android:layout_height="wrap_content"
+        android:layout_x="30px"
+        android:layout_y="100px"
+        android:text="开始录制音频" />
+
+    <Button
+        android:id="@+id/mediarecorder1_AudioStopBtn"
+        android:layout_width="170px"
+        android:layout_height="wrap_content"
+        android:layout_x="210px"
+        android:layout_y="100px"
+        android:text="停止音频录制" />
+
+</AbsoluteLayout>

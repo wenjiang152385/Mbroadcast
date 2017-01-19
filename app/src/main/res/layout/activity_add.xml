@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.AddFlightActivity">
+
+    <include layout="@layout/add_titlebar"/>
+
+    <include layout="@layout/add_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+    <include
+        android:id="@+id/flight_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/add_flight"
+        android:visibility="gone">
+
+    </include>
+
+    <include layout="@layout/add_body_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:id="@+id/transfers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

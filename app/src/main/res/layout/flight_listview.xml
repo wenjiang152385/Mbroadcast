@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/listview_title_bg"
+        android:gravity="center_vertical"
+        android:minHeight="60dp"
+        >
+
+        <TextView
+            android:id="@+id/text_title_flight_number"
+            android:layout_width="@dimen/listview_title_textview_size"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/listview_text_title_flight_number"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size"
+            />
+
+        <TextView
+            android:id="@+id/text_title_flightno"
+            android:layout_width="@dimen/listview_title_textview_size"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/listview_text_title_flight_status"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:id="@+id/text_title_flight_type"
+            android:layout_width="@dimen/listview_title_textview_size"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/listview_text_title_flight_type"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:id="@+id/text_title_destination"
+            android:layout_width="@dimen/listview_title_textview_size"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/listview_text_title_originating_information"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:id="@+id/text_title_arrival_information"
+            android:layout_width="@dimen/listview_title_textview_size"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/listview_text_title_arrival_information"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:id="@+id/text_title_delay_information"
+            android:layout_width="@dimen/listview_title_textview_size"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/listview_text_title_delay_information"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:id="@+id/text_title_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/listview_text_title_time"
+            android:textColor="@color/listview_title_text"
+            android:textSize="@dimen/text_size"/>
+    </LinearLayout>
+
+    <com.oraro.mbroadcast.ui.widget.RefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#fff4f7f9"
+            android:cacheColorHint="#00000000"
+            android:divider="#dddbdb"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"/>
+    </com.oraro.mbroadcast.ui.widget.RefreshLayout>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <include layout="@layout/add_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="11dp"
+                android:paddingRight="50dp"
+                android:background="@drawable/bg_et_settings"
+                android:weightSum="1">
+                <TextView
+
+                    android:layout_marginLeft="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="@string/activity_settings_text"
+                    android:textSize="18sp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/settings_edtext"
+                    android:background="@drawable/bg_et_settings"
+                    android:layout_width="60dp"
+                    android:layout_height="31dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/settings_edtext_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/activity_settings_day_select_range"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/bg_et_settings"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                >
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp">
+                <TextView
+                        android:layout_marginLeft="44dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="@string/activity_settings_day_select"
+                        android:textSize="18sp"
+                        android:textColor="#FF000000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:src="#FFC9C9C9"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginRight="18dp" />
+                </LinearLayout>
+                <ListView
+                android:id="@+id/set_day_select_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#FFC9C9C9" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="611dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_et_settings"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="18dp">
+
+            <ListView
+                android:id="@+id/set_word_select_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarFadeDuration="0"
+                android:fadeScrollbars="false"
+                android:divider="#FFC9C9C9"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

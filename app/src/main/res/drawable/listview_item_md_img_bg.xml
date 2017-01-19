@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/listview_item_md_img_up" android:state_pressed="false"/>
+    <item android:drawable="@drawable/listview_item_md_img_down" android:state_pressed="true"/>
+
+</selector>

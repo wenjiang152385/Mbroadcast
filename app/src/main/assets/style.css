@@ -1,0 +1,37 @@
+#name,#counter,#color,#delay,#cancel,#seatnumber,#stopping,#sharingflight,#lostplace,#lostitems,#foundplace,#counter1,#reason,#company{
+    border: none;
+    border-bottom: 1px solid #535353;
+    width: 100px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+.tt{
+    border: none;
+    /*border-bottom: 1px solid #535353;*/
+    width: 120px;
+    text-align: center;
+}
+.content{
+    margin-top: -10px;
+}
+*{
+    font-family: "微软雅黑";
+    font-size:18px;
+    color:#535353;
+}
+.margintop20{
+    margin-top: 20px;
+}
+#reason{
+    border: none;
+    border-bottom: 1px solid #535353;
+    width: 150px;
+    text-align: center;
+}
+.inputClass{
+    border: none;
+    width:100px;
+    border-bottom: 1px solid #535353;
+    text-align: center;
+    background-color: #ffffff;
+}

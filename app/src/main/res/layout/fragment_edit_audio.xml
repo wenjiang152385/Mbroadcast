@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_mould_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e5e5e5"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/tv_mouldTitle_audio_padding"
+        android:text="@string/tv_mouldTitle_audio"
+        android:textSize="@dimen/tv_mouldTitle_audio_textSize" />
+
+    <ListView
+        android:id="@+id/lv_mould_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

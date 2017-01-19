@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF363636"
+    >
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/iv_delay"
+            android:layout_height="30dp"
+            android:background="@drawable/delay"
+            android:layout_gravity="center_horizontal"
+            />
+
+zz
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="航班延误"
+            android:id="@+id/tv_delay"
+            android:textSize="16sp"
+            android:paddingTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF9B9B9B"
+
+            />
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linear_2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="center_vertical"-->
+
+        <!--&gt;-->
+        <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:id="@+id/iv_urgent_broadcast"-->
+            <!--android:background="@drawable/urgent_broadcast"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--/>-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:text="紧急广播"-->
+            <!--android:id="@+id/tv_urgent_broadcast"-->
+            <!--android:textSize="16sp"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:textColor="#FF9B9B9B"-->
+
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linear_3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="center_vertical"-->
+
+        <!--&gt;-->
+        <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:id="@+id/iv_popwindow_add_icon2"-->
+            <!--android:background="@drawable/popwindow_add_icon2"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--/>-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:text="手工录入"-->
+            <!--android:id="@+id/tv_popwindow_add_icon2"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:textColor="#FF9B9B9B"-->
+
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linear_4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="center_vertical"-->
+
+        <!--&gt;-->
+        <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:id="@+id/iv_popwindow_add_icon1"-->
+            <!--android:background="@drawable/popwindow_add_icon1"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--/>-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:text="新增航班"-->
+            <!--android:id="@+id/tv_popwindow_add_icon1"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:textColor="#FF9B9B9B"-->
+
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linear_5"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="center_vertical"-->
+
+        <!--&gt;-->
+        <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:id="@+id/iv_history"-->
+            <!--android:background="@drawable/history"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--/>-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:text="历史记录"-->
+            <!--android:id="@+id/tv_history"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:textColor="#FF9B9B9B"-->
+
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linear_6"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="center_vertical"-->
+
+        <!--&gt;-->
+        <!--<ImageView-->
+            <!--android:layout_width="24dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:id="@+id/iv_settings"-->
+            <!--android:background="@drawable/settings"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--/>-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="33dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:text="设置"-->
+            <!--android:id="@+id/tv_settings"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:textColor="#FF9B9B9B"-->
+
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

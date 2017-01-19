@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_edit_father"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--总title部分-->
+    <include layout="@layout/add_titlebar" />
+    <!--内容部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!--左边部分-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--左边上半部分-->
+            <include layout="@layout/activity_broadcast_left_top" />
+
+            <!--左边中间部分-->
+            <include layout="@layout/activity_broadcast_search" />
+
+            <!--左边下半部分-->
+            <include layout="@layout/activity_broadcast_flight_info" />
+
+        </LinearLayout>
+
+        <!--右边部分-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--模板标题-->
+                <TextView
+                    android:id="@+id/tv_edit_mould_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/tv_edit_mould_title_padding"
+                    android:text="@string/zhiji"
+                    android:textColor="#0090e2"
+                    android:textSize="@dimen/tv_edit_mould_title_textSize" />
+
+                <View
+                    android:layout_width="800dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#D9D9D9" />
+
+                <!--模板具体内容-->
+                <LinearLayout
+                    android:layout_width="@dimen/ll_edit_content_width"
+                    android:layout_height="@dimen/ll_edit_content_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/ll_edit_mould_info_marginTop"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_edit_mould_content"
+                        android:layout_width="600dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:padding="@dimen/tv_edit_moudle_info_padding"
+                        android:text="@string/tv_edit_mould_info"
+                        android:textColor="#535353"
+                        android:textSize="18dp" />
+
+                    <WebView
+                        android:id="@+id/webView_edit"
+                        android:layout_width="600dp"
+                        android:layout_height="200dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_edit_horn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:src="@drawable/edit_audio4"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/ll_file_select"
+                        layout="@layout/activity_edit_file_select"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+                <!--航班基本信息：航班号、始发站、目的站-->
+                <include layout="@layout/activity_broadcast_flight_row" />
+
+                <!--次数-->
+                <include layout="@layout/activity_broadcast_count1" />
+
+                <!--时间-->
+                <include layout="@layout/activity_broadcast_date" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_edit_insert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/bg_edit_btn_insert"
+                android:text="@string/insert"
+                android:textColor="#fff"
+                android:textSize="@dimen/edit_right_textSize" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

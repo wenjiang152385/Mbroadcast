@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linear_ll"
+        >
+        <FrameLayout
+            android:id="@+id/realtabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <com.oraro.mbroadcast.ui.widget.NumberProgressBar
+            android:id="@+id/numberbar1"
+            style="@style/NumberProgressBar_Default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            custom:progress_current="0"
+            />
+        <com.oraro.mbroadcast.ui.widget.CustomFragmentTabHost
+            android:id="@+id/custom_tabhost"
+            android:layout_width="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@id/realtabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+        </com.oraro.mbroadcast.ui.widget.CustomFragmentTabHost>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/autoplay"
+        android:src="@mipmap/zidongbig"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="20dp"
+        />
+</RelativeLayout>
